@@ -1,0 +1,6 @@
+<h1>Create New User</h1>
+<%= form_for :students, :method => :post, :url => :students do |f| %>
+  First name: <%= f.text_field :first_name %><br />
+  Last name : <%= f.text_field :last_name %><br />
+  <%= f.submit %>
+<% end %>
